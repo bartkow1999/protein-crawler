@@ -1,10 +1,11 @@
 # protein-crawler
-This application is the web crawler, which fetches offers from SFD store (sfd.pl). It calculates, which protein (WPC) costs the least per one serving (30g).
+This application is the web crawler, which fetches offers from SFD store ([sfd.pl](sfd.pl)). It calculates, which protein (WPC) costs the least per one serving (30g).
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Output](#output)
 
 ## General info
 The project was made in **March 2021**.
@@ -27,13 +28,14 @@ In terminal execute:
 node program.js
 ```
 
-
+## Output
 The result is a list of offers, sorted by price per serving (30g) in PLN.
+
 Notation:
 ```
 [ 
 ...
-[ <offer title>, <price per whole packaging [PLN]>, <packaging weight [g]>, <price per 30g [PLN]>  ]
+[ <offer title>, <price per whole packaging [PLN]>, <packaging weight [g]>, <price per 30g [PLN]> ],
 ...
 ]
 ```
@@ -46,4 +48,4 @@ For example:
   [ 'WPC Protein Econo', 34.99, '750g', 1.4 ],
   [ 'Protein 80', 109, '2250g', 1.45 ]
 ]
-  ```
+```
